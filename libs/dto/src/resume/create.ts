@@ -1,6 +1,6 @@
 import { createId } from "@paralleldrive/cuid2";
-import slugify from "@sindresorhus/slugify";
 import { createZodDto } from "nestjs-zod/dto";
+import slugify from "slugify";
 import { z } from "zod";
 
 export const createResumeSchema = z.object({

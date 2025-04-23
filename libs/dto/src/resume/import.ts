@@ -1,7 +1,7 @@
 import { createId } from "@paralleldrive/cuid2";
 import { resumeDataSchema } from "@reactive-resume/schema";
-import slugify from "@sindresorhus/slugify";
 import { createZodDto } from "nestjs-zod/dto";
+import slugify from "slugify";
 import { z } from "zod";
 
 export const importResumeSchema = z.object({

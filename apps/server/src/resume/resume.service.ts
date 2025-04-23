@@ -9,9 +9,9 @@ import { CreateResumeDto, ImportResumeDto, ResumeDto, UpdateResumeDto } from "@r
 import { defaultResumeData, ResumeData } from "@reactive-resume/schema";
 import type { DeepPartial } from "@reactive-resume/utils";
 import { ErrorMessage, generateRandomName } from "@reactive-resume/utils";
-import slugify from "@sindresorhus/slugify";
 import deepmerge from "deepmerge";
 import { PrismaService } from "nestjs-prisma";
+import slugify from "slugify";
 
 import { PrinterService } from "@/server/printer/printer.service";
 

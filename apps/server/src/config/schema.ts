@@ -83,6 +83,11 @@ export const configSchema = z.object({
   OPENID_SCOPE: z.string().optional(),
   OPENID_TOKEN_URL: z.string().url().optional(),
   OPENID_USER_INFO_URL: z.string().url().optional(),
+
+  // Yemen
+  YEMEN_JWT_SECRET: z.string(),
+  YEMEN_USER_ID: z.string(),
+  YEMEN_SYSTEM_EMAIL: z.string(),
 });
 
 export type Config = z.infer<typeof configSchema>;
